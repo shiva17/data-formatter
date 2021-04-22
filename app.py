@@ -14,9 +14,7 @@ import base64
 
 def home():
     st.title('Welcome')
-    
-    st.video("https://www.youtube.com/watch?v=eMA6GHTQ4WA")
-
+   
 def api_test():
     list_yn = st.selectbox('Select your task', ['Check Status of APIs', 'Show REST API Response'])
     if(list_yn == 'Check Status of APIs'):
