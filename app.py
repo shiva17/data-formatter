@@ -202,11 +202,11 @@ def template_creator():
     CREATE OR REPLACE PACKAGE {} IS
         FUNCTION function_name (input_parameter datatype) RETURN datatype;
         PROCEDURE proc_name(input_parameter datatype);
-    END pkg_name;
+    END {};
     
     
     --=========================== Package Body ================================
-    CREATE OR REPLACE PACKAGE BODY pkg_name IS
+    CREATE OR REPLACE PACKAGE BODY {} IS
         DECLARE YOUR VARIABLES
         FUNCTION function_name (input_parameter datatype) RETURN datatype
         IS
@@ -222,7 +222,7 @@ def template_creator():
         
         END;
     END {};
-    """.format(name,name)
+    """.format(name,name, name, name)
     
     func = """
     CREATE OR REPLACE FUNCTION {} (input_parameter datatype) RETURN datatype
